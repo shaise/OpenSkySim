@@ -28,7 +28,22 @@ Top Side (click to enlarge):
 * Connect the cable between the programmer and dongle:  
 <img src="/Media/prog_conn.jpg" width="300">  <img src="/Media/sim_prog_conn.jpg" width="300">
 * Connect the Stlink programmer to the PC. (no need to connect the dongle, it is powered from the programmer)
-* Download the OpenSkySim firmware, and use a programming software such as the ![ST Link Utility](https://www.st.com/en/development-tools/stsw-link004.html) and programm the dongle.
+* Download the OpenSkySim firmware, and use a programming software such as the ![ST Link Utility](https://www.st.com/en/development-tools/stsw-link004.html) and programm the dongle.  
+
+## Usage
+This dongle works with FR-Sky telemetry compatible transmitters. (SW 1 and 2 off on DJT modules)  
+You first need to bind the dongle with the transmitter (this is a one-time operation, repeat only if you change transmitter):  
+* Press and hold the bind button and insert the dongle to the PC. Wait for the green light to turn on.
+<img src="/Media/frsim_bind.jpg"> 
+
+* Start binding procedure in your transmitter. If you are using an external module such as the DJT, Press and hold the module bind button and turn on the transmitter. 
+* Wait for the red led on the dongle to start blinking. When it does, binding is complete! Turn off the transmitter and pull the dongle out from the PC.  
+
+From now on all you need to do to use the simulator is just by using the slide switch, select the operation mode: either 'Std' for standard HID compatible simulator or 'Pnx' for PhoenixRC, then insert the dongle to the PC and start Simm-ing!
+<img src="/Media/frsim_select.jpg"> 
+
+Remark: When using the dongle in 'Std' mode, the PC will recognize it as "OpenSky wireless sim dongle" HID game controller.
+
  
 
 
